@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="background" background="images/background4.png">
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <%for(i=0;i<nav.length;i++){%>
+              <li>
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+              <%}%>
+            </ul>
+          <div class="search">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+           
+        </nav>
+        </header>
+        <form action="/signup" class="signup" method="post">
+           <h2 class="user">Sign Up</h2>
+            <br>
+            <div class="container">
+                <label>First Name</label>
+                <br>
+                <input type="text" placeholder="First Name" id="firstname">
+            <br>
+            <label>Last Name</label>
+            <br>
+            <input type="text" placeholder="Last Name" id="firstname">
+         <br>
+            <label>Email</label>
+            <br>
+            <input type="text" placeholder="Email" id="emailid">
+            <label for="checkbody" id="checkbody"></label>
+        <br>
+            <label>Mobile No</label>
+            <br>
+            <input type="tel" placeholder="Mobile No" id="phonenumber">
+        <br>
+            <label>Password</label>
+            <br>
+            <input type="password" placeholder="Password" id="pwd">
+            <label for="pass" id="pass"></label>
+        <br>
+            <label> Retype Password</label>
+            <br>
+            <input type="password" placeholder="Retype Password" id="retypepassword">
+         <br>
+        <button id="submit" type="submit">Submit</button>
+    </div>
+              
+            </div>
+          </form>
+<div>
+<a  href="/" class="btn btn-primary pull-right btnNext">BACK </a>  
+</body>
+</html>

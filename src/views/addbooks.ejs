@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="background" background="images/background3.jpg">
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <%for(i=0;i<nav.length;i++){%>
+              <li>
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+              <%}%>
+            </ul>
+          <div class="search">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+           
+        </nav>
+        </header>
+        <form action="/admin/add" class="addbook" method="GET">
+            <div class="container">
+           <h2 class="add">Add Book</h2>
+            <br>
+            <div class="column left">
+                <label>Book Title</label>
+                <br>
+                <input class="width" type="text" placeholder="Book Title" id="firstname">
+            </div>
+            <div class="column right">
+            <label>Book Author</label>
+            <br>
+            <input class="width" type="text" placeholder="Book Author" id="firstname">
+        </div>
+        <div class="column left">
+            <label>Page Counts</label>
+        <br>
+            <input class="width" type="number" placeholder="Page Counts" id="emailid">
+        </div>
+        <div class="column right">
+            <label>Language</label>
+            <br>
+            <input class="width" type="text" placeholder="Language" id="phonenumber">
+        </div>
+        <div class="column left">
+            <label>Genre</label>
+            <br>
+            <input class="width" type="text" placeholder="Genre" id="pwd">
+        </div>
+        <div class="column right">
+            <label> Published Date</label>
+            <br>
+            <input class="width" type="text" placeholder="Published Date" id="retypepassword">
+        </div>
+        <div class="column left">
+         <label>Book Details</label>
+         <br>
+         <input class="type" type="text" placeholder="Book Details" id="retypepassword">
+        </div>
+        <br>
+        <div class="column left">
+      <input type="file" id="myFile" name="filename">
+    </div>
+    <div class="button">
+        <button class="submit" type="submit">Add</button>
+    </div>
+    </div>
+              
+            </div>
+          </form>
+<div>
+<a  href="/" class="btn btn-primary pull-right btnNext">BACK </a>  
+</body>
+</html>
