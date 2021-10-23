@@ -25,9 +25,10 @@ const admin1Router = require('./src/routes/admin1Routes')(nav);
 const loginRouter = require('./src/routes/loginRoutes');
 const signupRouter = require('./src/routes/signupRoutes');
 var app = express();
-var bodyparser = require('body-parser')
-app.use(bodyparser.urlencoded() );
+// var bodyparser = require('body-parser')
+// app.use(bodyparser.urlencoded() );
 
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('./public'));
 app.set('view engine','ejs');
 app.set('views','./src/views');
