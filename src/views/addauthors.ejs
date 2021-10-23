@@ -40,48 +40,48 @@
            
         </nav>
         </header>
-        <form action="/admin1/add" class="addbook" method="GET">
+        <form action="/admin1/add" class="addbook" method="POST">
             <div class="container">
            <h2 class="add1">Add Author</h2>
             <br>
             <div class="column left">
                 <label>Author Name</label>
                 <br>
-                <input class="width" type="text" placeholder="Author Name" id="firstname">
+                <input class="width" type="text" placeholder="Author Name" name="title">
             </div>
             <div class="column right">
             <label>Nationality</label>
             <br>
-            <input class="width" type="text" placeholder="Nationality" id="firstname">
-        </div>
-        <div class="column left">
-            <label>Date of Birth</label>
-        <br>
-            <input class="width" type="text" placeholder="Date of Birth" id="emailid">
+            <input class="width" type="text" placeholder="Nationality" name="nationality">
         </div>
         <div class="column right">
-            <label>Language</label>
+            <label>Place of Birth</label>
             <br>
-            <input class="width" type="text" placeholder="Language" id="phonenumber">
+            <input class="width" type="text" placeholder="Place of Birth" name="place">
         </div>
         <div class="column left">
             <label>Occupation</label>
             <br>
-            <input class="width" type="text" placeholder="Occupation" id="pwd">
+            <input class="width" type="text" placeholder="Occupation" name="occupation">
         </div>
         <div class="column right">
             <label>Famous works</label>
             <br>
-            <input class="width" type="text" placeholder="Famous works" id="retypepassword">
+            <input class="width" type="text" placeholder="Famous works" name="famous">
         </div>
+        <div class="column left">
+          <label>Date of Birth</label>
+      <br>
+          <input class="width" type="date" placeholder="Date of Birth" name="dob">
+      </div>
         <div class="column left">
          <label>Author Details</label>
          <br>
-         <input class="type" type="text" placeholder="Author Details" id="retypepassword">
+         <input class="type" type="text" placeholder="Author Details" name="details">
         </div>
         <br>
         <div class="column left">
-      <input type="file" id="myFile" name="filename">
+      <input type="file" name="image">
     </div>
     <div class="button">
         <button class="submit" type="submit">Add</button>
