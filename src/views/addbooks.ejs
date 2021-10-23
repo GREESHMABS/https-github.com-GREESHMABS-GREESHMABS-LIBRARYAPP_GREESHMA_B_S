@@ -40,48 +40,48 @@
            
         </nav>
         </header>
-        <form action="/admin/add" class="addbook" method="GET">
+        <form action="/admin/add" class="addbook" method="POST">
             <div class="container">
            <h2 class="add">Add Book</h2>
             <br>
             <div class="column left">
                 <label>Book Title</label>
                 <br>
-                <input class="width" type="text" placeholder="Book Title" id="firstname">
+                <input class="width" type="text" placeholder="Book Title" name="title">
             </div>
             <div class="column right">
             <label>Book Author</label>
             <br>
-            <input class="width" type="text" placeholder="Book Author" id="firstname">
+            <input class="width" type="text" placeholder="Book Author" name="author">
         </div>
         <div class="column left">
             <label>Page Counts</label>
         <br>
-            <input class="width" type="number" placeholder="Page Counts" id="emailid">
+            <input class="width" type="number" placeholder="Page Counts" name ="page">
         </div>
         <div class="column right">
             <label>Language</label>
             <br>
-            <input class="width" type="text" placeholder="Language" id="phonenumber">
+            <input class="width" type="text" placeholder="Language" name="language">
         </div>
         <div class="column left">
             <label>Genre</label>
             <br>
-            <input class="width" type="text" placeholder="Genre" id="pwd">
+            <input class="width" type="text" placeholder="Genre" name="genre">
         </div>
         <div class="column right">
             <label> Published Date</label>
             <br>
-            <input class="width" type="text" placeholder="Published Date" id="retypepassword">
+            <input class="width" type="date" placeholder="Published Date" name ="date">
         </div>
         <div class="column left">
          <label>Book Details</label>
          <br>
-         <input class="type" type="text" placeholder="Book Details" id="retypepassword">
+         <input class="type" type="text" placeholder="Book Details" name ="details">
         </div>
         <br>
         <div class="column left">
-      <input type="file" id="myFile" name="filename">
+      <input class ="myFile" type="file" name="image">
     </div>
     <div class="button">
         <button class="submit" type="submit">Add</button>
