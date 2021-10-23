@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="background" background="images/background3.jpg">
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <%for(i=0;i<nav.length;i++){%>
+              <li>
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+              <%}%>
+            </ul>
+          <div class="search">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+           
+        </nav>
+        </header>
+        <form action="/login" class="login" method="POST">
+           <h2 class="user">User login</h2>
+            <br>
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <br>
+              <input id="username" type="text" placeholder="Enter Username" name="username" required>
+               <br>
+              <label for="psw"><b>Password</b></label>
+              <br>
+              <input  id="password" type="password" placeholder="Enter Password" name="password" required>
+               <br>
+               <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> 
+              <br>
+              <button id="submit" type="submit">Login</button>
+              
+            </div>
+          </form>
+<div>
+<a  href="/" class="btn btn-primary pull-right btnNext">BACK </a>  
+</body>
+</html>
